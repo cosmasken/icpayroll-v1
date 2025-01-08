@@ -11,8 +11,30 @@
       "type": "custom",
       "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz"
     },
+    "ic_siwe_provider": {
+      "candid": "https://github.com/kristoferlund/ic-siwe/releases/download/v0.1.1/ic_siwe_provider.did",
+      "declarations": {
+        "output": "src/ic_siwe_provider/declarations"
+      },
+      "type": "custom",
+      "wasm": "https://github.com/kristoferlund/ic-siwe/releases/download/v0.1.1/ic_siwe_provider.wasm.gz"
+    },
+    "icp_ledger_canister": {
+      "type": "custom",
+      "candid": "https://raw.githubusercontent.com/dfinity/ic/d87954601e4b22972899e9957e800406a0a6b929/rs/rosetta-api/icp_ledger/ledger.did",
+      "wasm": "https://download.dfinity.systems/ic/d87954601e4b22972899e9957e800406a0a6b929/canisters/ledger-canister.wasm.gz",
+      "remote": {
+        "id": {
+          "ic": "ryjl3-tyaaa-aaaaa-aaaba-cai"
+        }
+      },
+      "specified_id": "ryjl3-tyaaa-aaaaa-aaaba-cai"
+    },
     "pochi_backend": {
       "candid": "src/pochi_backend/pochi_backend.did",
+      "declarations": {
+        "output": "src/pochi_backend/declarations"
+      },
       "package": "pochi_backend",
       "type": "rust"
     },
